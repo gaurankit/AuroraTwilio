@@ -1,0 +1,17 @@
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\TwilioApp.exe.config
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\TwilioApp.exe
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\TwilioApp.pdb
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Twilio.dll
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\bin\Debug\Twilio.xml
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\obj\Debug\TwilioApp.csprojAssemblyReference.cache
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\obj\Debug\TwilioApp.csproj.CoreCompileInputs.cache
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\obj\Debug\TwilioApp.csproj.CopyComplete
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\obj\Debug\TwilioApp.exe
+C:\Users\agaur\Desktop\TwilioApp\TwilioApp\obj\Debug\TwilioApp.pdb
