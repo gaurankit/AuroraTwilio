@@ -186,4 +186,10 @@ C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\obj\Debug\TwilioVoiceAPI.csproj.Co
 C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\obj\Debug\TwilioVoiceAPI.csproj.CopyComplete
 C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\obj\Debug\TwilioVoiceAPI.dll
 C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\obj\Debug\TwilioVoiceAPI.pdb
+C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\bin\AWSSDK.Core.dll
+C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\bin\AWSSDK.DynamoDBv2.dll
+C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\bin\AWSSDK.Core.pdb
+C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\bin\AWSSDK.Core.xml
+C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\bin\AWSSDK.DynamoDBv2.pdb
+C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\bin\AWSSDK.DynamoDBv2.xml
 C:\AuroraTwilio\TwilioVoiceAPI\TwilioVoiceAPI\obj\Debug\TwilioVoiceAPI.csprojAssemblyReference.cache
