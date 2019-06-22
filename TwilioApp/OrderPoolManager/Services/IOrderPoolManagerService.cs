@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace OrderPoolManager.Services
 {
-    interface IOrderPoolManagerService
+    public interface IOrderPoolManagerService
     {
         Task<PoolManagerRS> GetOrderDetailsAsync(PoolManagerRQ schedulerInput);
+
+        Task<bool> PushOrderDetailsToQueue(OrderDetail orderDetail);
     }
 }

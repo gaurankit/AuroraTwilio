@@ -2,6 +2,7 @@
   "profiles": {
     "ConfirmationScheduler": {
       "commandName": "Project",
+      "commandLineArgs": "Daily",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

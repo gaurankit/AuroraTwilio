@@ -27,6 +27,7 @@ C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\bin\Debug\Microsoft.IdentityModel.Toke
 C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\bin\Debug\Newtonsoft.Json.xml
 C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\bin\Debug\Twilio.xml
+C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\obj\Debug\TwilioApp.csprojAssemblyReference.cache
 C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\obj\Debug\TwilioApp.csproj.CoreCompileInputs.cache
 C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\obj\Debug\TwilioApp.csproj.CopyComplete
 C:\Rahul\AuroraTwilio\TwilioApp\TwilioApp\obj\Debug\TwilioApp.exe

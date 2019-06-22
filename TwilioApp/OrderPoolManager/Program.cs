@@ -9,6 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using System;
+using OrderPoolManager.Models;
+using System.Globalization;
+using System.Threading.Tasks;
 
 namespace OrderPoolManager
 {
@@ -20,13 +23,13 @@ namespace OrderPoolManager
         {
             var servicesProvider = BuildDi();
             var runner = servicesProvider.GetRequiredService<LogRunner>();
-            var schedulerService = servicesProvider.GetRequiredService<OrderPoolManagerService>();
+            var orderPoolManagerService = servicesProvider.GetRequiredService<OrderPoolManagerService>();
             runner.DoAction("Main Started");
             try
             {
-                if (args.Length != 0 && args[0].Equals("REPORT"))
+                if (args.Length != 0)
                 {
-                    //Create(args, runner, schedulerService).Wait();
+                    GetAndPushOrderDetailsToQueue(args, runner, orderPoolManagerService).Wait();
                 }
                 runner.DoAction("Main End");
                 NLog.LogManager.Shutdown();
@@ -40,6 +43,7 @@ namespace OrderPoolManager
             Environment.ExitCode = 0;
         }
 
+        #region Helper methods
         private static IServiceProvider BuildDi()
         {
             var services = new ServiceCollection();
@@ -76,5 +80,50 @@ namespace OrderPoolManager
 
             return serviceProvider;
         }
+        private static async Task<bool> GetAndPushOrderDetailsToQueue(string[] args, LogRunner runner, OrderPoolManagerService orderPoolManagerService)
+        {
+            bool isSuccess = false;
+
+            var poolManagerRQ = GetPoolManagerRequest(args);
+
+            var poolManagerRS = await orderPoolManagerService.GetOrderDetailsAsync(poolManagerRQ);
+
+            foreach(OrderDetail orderDetail in poolManagerRS.OrderDetails)
+            {
+                isSuccess = await orderPoolManagerService.PushOrderDetailsToQueue(orderDetail);
+            }
+
+            return isSuccess;
+        }
+
+        private static PoolManagerRQ GetPoolManagerRequest(string[] args)
+        {
+            var poolManagerRQ = new PoolManagerRQ();
+
+            var frequency = args[0];
+
+            var today = DateTime.Today;
+
+            switch (frequency)
+            {
+                //case "Hourly": 
+                //    {
+                //        poolManagerRQ.FromDate = today.AddDays(-1);
+                //        poolManagerRQ.ToDate = today;
+                //        break;
+                //    }
+                case "Daily":
+                default:
+                    {
+                        //poolManagerRQ.FromDate = today.AddDays(-1);
+                        poolManagerRQ.FromDate = today.AddMonths(-6);
+                        poolManagerRQ.ToDate = today;
+                        break;
+                    }
+            }
+
+            return poolManagerRQ;
+        }
+        #endregion
     }
 }

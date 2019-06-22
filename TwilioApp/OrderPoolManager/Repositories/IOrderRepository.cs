@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OrderPoolManager.Repositories
 {
-    interface IOrderRepository
+    public interface IOrderRepository
     {
-        Task<PoolManagerRS> GetOrderDetails(PoolManagerRQ schedulerInput);
+        Task<PoolManagerRS> GetOrderDetailsAsync(PoolManagerRQ schedulerInput);
     }
 }

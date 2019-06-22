@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OrderPoolManager.Models;
 using OrderPoolManager.Repositories.DBModels;
+using System.Linq;
 
 namespace OrderPoolManager.Repositories
 {
@@ -15,9 +16,17 @@ namespace OrderPoolManager.Repositories
             _OrderContext = dbContext;
         }
 
-        public Task<PoolManagerRS> GetOrderDetails(PoolManagerRQ schedulerInput)
+        public async Task<PoolManagerRS> GetOrderDetailsAsync(PoolManagerRQ schedulerInput)
         {
-            throw new NotImplementedException();
+            var poolManagerRS = new PoolManagerRS();
+
+            var cmd = EFExtension.LoadStoredProc(_OrderContext, "spGetOrderDetailsByDateTime").WithSqlParam("@From", schedulerInput.FromDate).WithSqlParam("@To", schedulerInput.ToDate);
+            await EFExtension.ExecuteStoredProcAsync(cmd, (handler) =>
+            {
+                poolManagerRS.OrderDetails = handler.ReadToList<OrderDetail>().ToList();
+            });
+
+            return poolManagerRS;
         }
     }
 }

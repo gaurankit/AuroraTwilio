@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "AutoMapper/8.1.1": {
+      "AutoMapper/8.1.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
@@ -15,10 +15,10 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
         "type": "package",
         "dependencies": {
-          "AutoMapper": "8.1.1",
+          "AutoMapper": "8.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
@@ -26,6 +26,27 @@
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.103": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.SQS/3.3.100.36": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.103, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
         }
       },
       "EPPlus.Core/1.5.4": {
@@ -4831,13 +4852,13 @@
     }
   },
   "libraries": {
-    "AutoMapper/8.1.1": {
-      "sha512": "nVzVE1e9EoNFozDVP6RsY26RXbk4cuZJdG/SFB896tumt3b9ljMo3ar2HsgPKE+Pb2ywlVp1y74Bidb+tB9RUA==",
+    "AutoMapper/8.1.0": {
+      "sha512": "YyGENUyP7CdOJcw2TCEMtkuRgj9iRFLHeACrfBEDPY5xIiTB/iDxNFdOy5br4abWR8KnSdQeK/x+GQLE7uiFtQ==",
       "type": "package",
-      "path": "automapper/8.1.1",
+      "path": "automapper/8.1.0",
       "files": [
         ".signature.p7s",
-        "automapper.8.1.1.nupkg.sha512",
+        "automapper.8.1.0.nupkg.sha512",
         "automapper.nuspec",
         "lib/net461/AutoMapper.dll",
         "lib/net461/AutoMapper.pdb",
@@ -4847,16 +4868,101 @@
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
-      "sha512": "weYyci4V2DHEiFjRsXqhSlBXRPEYvtkH/tKyPtAtSKI10UtIV0sK3XIMJQWV4Up/iY9Z355hZqwWhZTI3et5pg==",
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
+      "sha512": "KjuQqNFqE0GXCaV10GBlqE5thqgMz0hgzcLidCRBq+nEo9KiFspsRWOsRrk4sQKM3UQqOYRIKfFFO3XBnUo4Yg==",
       "type": "package",
-      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.1",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.0",
       "files": [
         ".signature.p7s",
-        "automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512",
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
+    "AWSSDK.Core/3.3.103": {
+      "sha512": "dbo77Wsp92CGVCfoLPmIoQ4XAXTLyXn+qGlXTl07jcOhGW+QmnS6LnEMPYcxJyyPJ4yKtXh+m+LqDzLM5O7OAw==",
+      "type": "package",
+      "path": "awssdk.core/3.3.103",
+      "files": [
+        ".signature.p7s",
+        "awssdk.core.3.3.103.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.SQS/3.3.100.36": {
+      "sha512": "QDilLasYj/ry4Ee4CW67TO1ck3HqaHXBEVlSLrJd17RjhV0Z+xWQCh9RB1MyXJ8iin0VYB6piw1eyob1VggCsw==",
+      "type": "package",
+      "path": "awssdk.sqs/3.3.100.36",
+      "files": [
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
+        "awssdk.sqs.3.3.100.36.nupkg.sha512",
+        "awssdk.sqs.nuspec",
+        "lib/MonoAndroid10/AWSSDK.SQS.XML",
+        "lib/MonoAndroid10/AWSSDK.SQS.dll",
+        "lib/MonoTouch10/AWSSDK.SQS.XML",
+        "lib/MonoTouch10/AWSSDK.SQS.dll",
+        "lib/MonoTouch10/AWSSDK.SQS.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.SQS.XML",
+        "lib/Xamarin.iOS10/AWSSDK.SQS.dll",
+        "lib/net35/AWSSDK.SQS.dll",
+        "lib/net35/AWSSDK.SQS.pdb",
+        "lib/net35/AWSSDK.SQS.xml",
+        "lib/net45/AWSSDK.SQS.dll",
+        "lib/net45/AWSSDK.SQS.pdb",
+        "lib/net45/AWSSDK.SQS.xml",
+        "lib/netstandard1.3/AWSSDK.SQS.dll",
+        "lib/netstandard1.3/AWSSDK.SQS.pdb",
+        "lib/netstandard1.3/AWSSDK.SQS.xml",
+        "lib/netstandard2.0/AWSSDK.SQS.dll",
+        "lib/netstandard2.0/AWSSDK.SQS.pdb",
+        "lib/netstandard2.0/AWSSDK.SQS.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.pdb",
+        "lib/uap/AWSSDK.SQS.XML",
+        "lib/uap/AWSSDK.SQS.dll",
+        "lib/uap/AWSSDK.SQS.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "EPPlus.Core/1.5.4": {
@@ -12862,8 +12968,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "AutoMapper >= 8.1.1",
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.1",
+      "AWSSDK.SQS >= 3.3.100.36",
+      "AutoMapper >= 8.1.0",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.0",
       "EPPlus.Core >= 1.5.4",
       "Microsoft.AspNetCore.All >= 2.0.9",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -12916,13 +13023,17 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "AWSSDK.SQS": {
+            "target": "Package",
+            "version": "[3.3.100.36, )"
+          },
           "AutoMapper": {
             "target": "Package",
-            "version": "[8.1.1, )"
+            "version": "[8.1.0, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "[6.1.1, )"
+            "version": "[6.1.0, )"
           },
           "EPPlus.Core": {
             "target": "Package",

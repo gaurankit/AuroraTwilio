@@ -6,6 +6,10 @@ namespace OrderPoolManager.Repositories.DBModels
 {
     public partial class OrderContext : DbContext
     {
+        public OrderContext(DbContextOptions<OrderContext> options)
+            : base(options)
+        {
+        }
         public virtual DbSet<EnsureBookingJobMaxOrderId> EnsureBookingJobMaxOrderId { get; set; }
         public virtual DbSet<EnsureBookingJobPn> EnsureBookingJobPn { get; set; }
         public virtual DbSet<EnsureBookingJobTp> EnsureBookingJobTp { get; set; }

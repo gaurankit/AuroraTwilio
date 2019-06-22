@@ -1,15 +1,16 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "95685c5182f2b0dbd39f9b6ad1834d1e51f05dbf"
+    "signature": "8819cca3b6cbf7d8a01944c9f24704703bba318f"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "OrderPoolManager/1.0.0": {
         "dependencies": {
-          "AutoMapper": "8.1.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
+          "AWSSDK.SQS": "3.3.100.36",
+          "AutoMapper": "8.1.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
           "EPPlus.Core": "1.5.4",
           "Microsoft.AspNetCore.All": "2.0.9",
           "NLog": "4.6.5",
@@ -20,27 +21,46 @@
           "OrderPoolManager.dll": {}
         }
       },
-      "AutoMapper/8.1.1": {
+      "AutoMapper/8.1.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
           "System.Reflection.Emit": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {
-            "assemblyVersion": "8.1.1.0",
-            "fileVersion": "8.1.1.0"
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.0.0"
           }
         }
       },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
         "dependencies": {
-          "AutoMapper": "8.1.1",
+          "AutoMapper": "8.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "0.0.0.0",
-            "fileVersion": "6.1.1.0"
+            "fileVersion": "6.1.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.3.103": {
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.103.0"
+          }
+        }
+      },
+      "AWSSDK.SQS/3.3.100.36": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.103"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SQS.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.100.36"
           }
         }
       },
@@ -3833,19 +3853,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AutoMapper/8.1.1": {
+    "AutoMapper/8.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nVzVE1e9EoNFozDVP6RsY26RXbk4cuZJdG/SFB896tumt3b9ljMo3ar2HsgPKE+Pb2ywlVp1y74Bidb+tB9RUA==",
-      "path": "automapper/8.1.1",
-      "hashPath": "automapper.8.1.1.nupkg.sha512"
+      "sha512": "sha512-YyGENUyP7CdOJcw2TCEMtkuRgj9iRFLHeACrfBEDPY5xIiTB/iDxNFdOy5br4abWR8KnSdQeK/x+GQLE7uiFtQ==",
+      "path": "automapper/8.1.0",
+      "hashPath": "automapper.8.1.0.nupkg.sha512"
     },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-weYyci4V2DHEiFjRsXqhSlBXRPEYvtkH/tKyPtAtSKI10UtIV0sK3XIMJQWV4Up/iY9Z355hZqwWhZTI3et5pg==",
-      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.1",
-      "hashPath": "automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512"
+      "sha512": "sha512-KjuQqNFqE0GXCaV10GBlqE5thqgMz0hgzcLidCRBq+nEo9KiFspsRWOsRrk4sQKM3UQqOYRIKfFFO3XBnUo4Yg==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.3.103": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dbo77Wsp92CGVCfoLPmIoQ4XAXTLyXn+qGlXTl07jcOhGW+QmnS6LnEMPYcxJyyPJ4yKtXh+m+LqDzLM5O7OAw==",
+      "path": "awssdk.core/3.3.103",
+      "hashPath": "awssdk.core.3.3.103.nupkg.sha512"
+    },
+    "AWSSDK.SQS/3.3.100.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QDilLasYj/ry4Ee4CW67TO1ck3HqaHXBEVlSLrJd17RjhV0Z+xWQCh9RB1MyXJ8iin0VYB6piw1eyob1VggCsw==",
+      "path": "awssdk.sqs/3.3.100.36",
+      "hashPath": "awssdk.sqs.3.3.100.36.nupkg.sha512"
     },
     "EPPlus.Core/1.5.4": {
       "type": "package",

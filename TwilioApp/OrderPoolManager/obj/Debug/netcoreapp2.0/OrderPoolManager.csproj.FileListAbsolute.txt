@@ -24,11 +24,14 @@ C:\Rahul\Hackathon2019\Aurora\Aurora\obj\Debug\netcoreapp2.0\OrderPoolManager.pd
 C:\Rahul\Hackathon2019\Aurora\Aurora\obj\Debug\netcoreapp2.0\OrderPoolManager.csprojAssemblyReference.cache
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\appsettings.Development.json
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\nlog.config
+C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\nlog.Development.config
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\OrderPoolManager.deps.json
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\OrderPoolManager.runtimeconfig.json
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\OrderPoolManager.runtimeconfig.dev.json
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\OrderPoolManager.dll
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\bin\Debug\netcoreapp2.0\OrderPoolManager.pdb
+C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\obj\Debug\netcoreapp2.0\OrderPoolManager.csprojAssemblyReference.cache
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\obj\Debug\netcoreapp2.0\OrderPoolManager.csproj.CoreCompileInputs.cache
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\obj\Debug\netcoreapp2.0\OrderPoolManager.AssemblyInfoInputs.cache
 C:\Rahul\AuroraTwilio\TwilioApp\OrderPoolManager\obj\Debug\netcoreapp2.0\OrderPoolManager.AssemblyInfo.cs
