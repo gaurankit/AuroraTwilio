@@ -21,7 +21,7 @@ namespace TwilioApp
             var to = new PhoneNumber("+19523888164");
             var from = new PhoneNumber("+17639511257");
             var call = CallResource.Create(to, from,
-                url: new Uri("https://b4b84570.ngrok.io/Aurora/GetOrder?orderId=12312"));
+                url: new Uri("https://8e87bdb9.ngrok.io/Aurora/GetOrder?orderId=12312"));
 
             Console.WriteLine(call.Sid);
         }
